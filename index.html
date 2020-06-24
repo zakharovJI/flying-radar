@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Детектор полетов</title>
+    <meta name="apple-mobile-web-app-title" content="Детектор полетов">
+    <meta name="application-name" content="Детектор полетов">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header>
+
+        </header>
+        <main>
+            <section>
+                <table id="mainTable">
+                    <thead>
+                        <tr>
+                            <th>Номер рейса</th>
+                            <th>Координаты самолета</th>
+                            <th>Скорость, 
+                                <span>км/ч</span>
+                            </th>
+                            <th>Курс,
+                                <span>°</span>
+                            </th>
+                            <th>Высота полета, 
+                                <span>м</span>
+                            </th>
+                            <th>Коды аэропортов</th>
+                            <th 
+                                class="sortable"
+                                data-sorting-key="distance"
+                                data-sorting-state="true"
+                            >Расстояние до аэропорта <br>Домодедово,
+                                <span>м</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+
+
+<script type="text/javascript" src="main.js"></script>
+</html>

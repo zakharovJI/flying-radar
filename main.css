@@ -1,0 +1,130 @@
+*, *::before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+  
+  }
+  
+::-ms-clear {
+    display: none;
+}
+  
+body {
+    font-weight: 400;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: lightgray;
+}
+
+.app main {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app main section {
+    max-width: 1170px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.app table {
+    border-collapse: collapse;
+    overflow: hidden;
+    width: 100%;
+}
+
+.app table thead th {
+    font-family: 'Comfortaa', cursive;
+    padding: 10px 15px;
+    box-shadow: inset 1px 1px 0 #f2f2f2, inset 0 0px 0 #f2f2f2;
+    white-space: nowrap;
+    font-size: 12px;
+    background-color: #fbfbfb;
+    cursor: pointer;
+}
+
+.app table thead th:last-child {
+    box-shadow: inset 1px 1px 0 #f2f2f2, inset 0 0px 0 #f2f2f2, inset -1px 1px 0 #f2f2f2;
+}
+
+
+.app table thead th span {
+    color: #bebebe;
+    padding-left: 5px;
+}
+
+.app table tbody tr {
+    border-right: 2px solid #f2f2f2;
+    cursor: pointer;
+    transition: background .15s linear;
+}
+
+.app table tbody tr:nth-child(2n) {
+    background-color: #f5f5f5;
+}
+
+.app table tbody tr.selected{
+    background-color: #dae2e2;
+}
+
+.app table tbody tr:hover {
+    background-color: #eaeeee;
+}
+
+.app table tbody tr:active, .app table tbody tr:focus {
+    background-color: #dbdfdf;
+}
+
+.app table tbody td {
+    border: 1px solid #f2f2f2;
+        padding: 10px 15px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.app table tbody td.table-data_airports span {
+    padding-left: 23px;
+    position: relative;
+}
+
+.app table tbody td span:not(:first-child) {
+    padding-left: 23px;
+}
+
+.app table tbody td.table-data_airports span:last-child:not(:first-child) {
+    margin-left: 15px;
+}
+
+.app table tbody td.table-data_airports span:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    display: inline-block;
+    transform: translateY(-50%);
+    background-image: url("./assets/icons/plane.svg");
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    height: 20px;
+}
+
+.app table tbody td.table-data_airports span.airports_last:before {
+    transform: translateY(-50%) rotate(90deg);
+}
